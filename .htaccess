@@ -1,0 +1,5 @@
+<IfModule rewrite_module>
+RewriteEngine On
+RewriteRule ^([\w*\_]+[\w*])$ GetController.php?name=$1 [L]
+RewriteRule ^([\w*\.]+[^php])$ PostController.php?name=$1 [L]
+</IfModule>
